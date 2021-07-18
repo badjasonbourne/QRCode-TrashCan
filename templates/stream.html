@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<style>
+            html{
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                font-family: "Courier New";
+                background: url('/static/pic.jpg') no-repeat 0px 0px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                -moz-background-size: 100% 100%;
+            }
+	    
+	    .stream{
+		width: 400px;
+		height: 400px;
+		margin: 0 auto;
+		position: relative;
+		background-color: rgba(216, 191, 216, 0.3);
+		top 100%;
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		vertical-align: middle;
+		text-align: center;
+	    }
+	    
+	    .stream img{
+		width: 250px;
+		height: 250px;    
+	     }
+        </style>
+	</head>
+	<body>
+		<h1>Streaming</h1>
+		<div class="stream">
+		<img src="{{ url_for('video_feed') }}" style="width: 600px">
+	</body>
+</html>

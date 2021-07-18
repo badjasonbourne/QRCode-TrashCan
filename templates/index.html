@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            html{
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                font-family: "Courier New";
+                background: url('/static/pic.jpg') no-repeat 0px 0px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                -moz-background-size: 100% 100%;
+            }
+
+            .button {
+                display: block;
+                width: 115px;
+                height: 25px;
+                background: rgba(4, 177, 64, 0.81);
+                padding: 20px;
+                text-align: center;
+                border-radius: 5px;
+                color: #342e2e;
+                font-weight: bold;
+                line-height: 25px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: rgba(20,97,49,0.88)">Flask Authentication System in Flask</h1>
+        <div id="login">
+            <a style="display:block;margin:0 auto" class=button href="{{url_for('login')}}">login</a>
+        </div>
+        <br>
+        <br>
+        <div id="register">
+            <a style="display: block;margin: 0 auto" class=button href="{{url_for('register')}}">register</a>
+        </div>
+    </body>
+</html>
